@@ -26,7 +26,7 @@ jobs:
 
       # Build Angular app
       - name: Build Angular App
-        run: npm run build -- --configuration production
+        run: ng build --configuration production --base-href /new-app/
 
       # Upload the build output
       - name: Upload artifact
